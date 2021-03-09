@@ -44,7 +44,7 @@ from lib.settings import the_settings
 
 
 def show_menu():
-	print(banner_maker(sc_name="mix_blockchain_network Coin",description="This is new generation best safe coin.",author="Onur Atakan ULUSOY",email="atadogan06@gmail.com") + \
+	print(banner_maker(sc_name="Mix Blockchain Network",description="This is an open source blockchain network project. It exists for people to build and use their own blockchain networks. Or to join the network created by others.",author="Onur Atakan ULUSOY",email="atadogan06@gmail.com") + \
        menu_space() + \
        menu_maker(menu_number="cbc",menu_text="Create Blockchain")+ \
 	   menu_maker(menu_number="cw",menu_text="Create Wallet")+ \
