@@ -1,4 +1,5 @@
 # Mix Blockchain Network
+![mix_blockchain_network](https://repository-images.githubusercontent.com/344505400/97344600-8134-11eb-8866-afe57927427f)
 
 # Introducing
 This is an open source blockchain network project. It exists for people to build and use their own blockchain networks. Or to join the network created by others.
