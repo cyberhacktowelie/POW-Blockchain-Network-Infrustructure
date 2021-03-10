@@ -34,3 +34,7 @@ Now you can earn more mines by mining one in every 3 transactions, and you can u
 
 # Reminder
 Important Information and Reminder Information and programs in all repositories are created for testing purposes. Any legal responsibility belongs to the person or organization that uses it.
+
+
+
+[![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/) [![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/onuratakan/mix_blockchain_network/blob/master/LICENSE)
