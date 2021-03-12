@@ -57,7 +57,7 @@ def show_menu():
 	   menu_maker(menu_number="ndstart",menu_text="Node Start")+ \
        menu_maker(menu_number="ndstop",menu_text="Node Stop")+ \
        menu_maker(menu_number="ndconnect",menu_text="Node Connect")+ \
-       menu_maker(menu_number="ndconnectmixdb",menu_text="Node Connect from mix_blockchain_network-DB")+ \
+       menu_maker(menu_number="ndconnectmixdb",menu_text="Node Connect from mixdb")+ \
        menu_space() + \
        menu_maker(menu_number="testmodeon",menu_text="Test mode ON")+ \
        menu_maker(menu_number="testmodeoff",menu_text="Test mode OF")+ \
@@ -102,8 +102,12 @@ def menu():
             the_settings().test_mode(False)
         if choices_input == "debugmodeon":
             the_settings().debug_mode(True)
+            from node.myownp2pn import MyOwnPeer2PeerNode
+            MyOwnPeer2PeerNode.main_node.debug = True
         if choices_input == "debugmodeoff":
             the_settings().debug_mode(False)
+            from node.myownp2pn import MyOwnPeer2PeerNode
+            MyOwnPeer2PeerNode.main_node.debug = False
 
 
         if choices_input == "getfullnodelist":
