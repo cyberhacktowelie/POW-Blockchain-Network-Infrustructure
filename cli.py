@@ -57,7 +57,7 @@ def show_menu():
 	   menu_maker(menu_number="ndstart",menu_text="Node Start")+ \
        menu_maker(menu_number="ndstop",menu_text="Node Stop")+ \
        menu_maker(menu_number="ndconnect",menu_text="Node Connect")+ \
-       menu_maker(menu_number="ndconnectmix_blockchain_network",menu_text="Node Connect from mix_blockchain_network-DB")+ \
+       menu_maker(menu_number="ndconnectmixdb",menu_text="Node Connect from mix_blockchain_network-DB")+ \
        menu_space() + \
        menu_maker(menu_number="testmodeon",menu_text="Test mode ON")+ \
        menu_maker(menu_number="testmodeoff",menu_text="Test mode OF")+ \
@@ -94,7 +94,7 @@ def menu():
             ndstop()
         if choices_input == "ndconnect":
             ndconnect(str(input("node ip: ")),int(input("node port: ")))
-        if choices_input == "ndconnectmix_blockchain_network":
+        if choices_input == "ndconnectmixdb":
             ndconnectmix_blockchain_network()
         if choices_input == "testmodeon":
             the_settings().test_mode(True)
