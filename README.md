@@ -1,4 +1,4 @@
-# POW Blockchain Network Infrustructure | [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/) [![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/onuratakan/mix_blockchain_network/blob/master/LICENSE)
+# POW-Blockchain Network Infrustructure | [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/) [![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/onuratakan/mix_blockchain_network/blob/master/LICENSE)
 ![POW-Blockchain-Network-Infrustructure](https://repository-images.githubusercontent.com/344505400/97344600-8134-11eb-8866-afe57927427f)
 
 # Introducing
