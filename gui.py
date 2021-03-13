@@ -98,7 +98,7 @@ class main_gui:
         self.toplevel.configure(height='200', takefocus=True, width='200')
         self.toplevel.iconphoto(True, self.blockchain_44x50_png)
         self.toplevel.resizable(True, True)
-        self.toplevel.title('Mix Blockchain Network')
+        self.toplevel.title('POW-Blockchain Network Infrustructure')
 
         # Main widget
         self.mainwindow = self.toplevel
