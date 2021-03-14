@@ -78,7 +78,7 @@ class main_gui:
         self.button2.grid(column='0', padx='25', pady='20', row='4', sticky='w')
         self.button2.configure(command=self.start_node_server)
         self.button3 = ttk.Button(self.frame)
-        self.button3.configure(compound='top', image=self.cellmolecule_50x50_png, text='Connect Node \nfrom mix_blockchain_network \ndatabase')
+        self.button3.configure(compound='top', image=self.cellmolecule_50x50_png, text='Connect Node \nfrom MIX Database')
         self.button3.grid(column='3', padx='25', pady='20', row='3', sticky='e')
         self.button3.configure(command=self.connect_node_mix_blockchain_network)
         self.button4 = ttk.Button(self.frame)
@@ -98,7 +98,7 @@ class main_gui:
         self.toplevel.configure(height='200', takefocus=True, width='200')
         self.toplevel.iconphoto(True, self.blockchain_44x50_png)
         self.toplevel.resizable(True, True)
-        self.toplevel.title('Mix Blockchain Network')
+        self.toplevel.title('POW-Blockchain Network Infrustructure')
 
         # Main widget
         self.mainwindow = self.toplevel

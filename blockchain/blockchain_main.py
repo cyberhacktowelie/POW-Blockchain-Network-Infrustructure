@@ -201,7 +201,14 @@ def sendme_full_node_list():
 def sendme_full_chain():
     from node.myownp2pn import MyOwnPeer2PeerNode
     node = MyOwnPeer2PeerNode.main_node
-    node.send_to_node(node.nodes_outbound[0],"sendmefullchain")   
+    try:
+        node.send_to_node(node.nodes_outbound[0],"sendmefullchain")   
+    except:
+        pass
+    try:
+        node.send_to_node(node.nodes_inbound[0],"sendmefullchain")   
+     except:
+        pass
 
 
 def create_blockchain():
