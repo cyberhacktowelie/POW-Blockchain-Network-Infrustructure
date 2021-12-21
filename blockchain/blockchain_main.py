@@ -207,7 +207,7 @@ def sendme_full_chain():
         pass
     try:
         node.send_to_node(node.nodes_inbound[0],"sendmefullchain")   
-     except:
+    except:
         pass
 
 
