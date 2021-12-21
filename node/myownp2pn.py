@@ -82,8 +82,8 @@ class MyOwnPeer2PeerNode (Node):
         file = open("blockchain.mix_blockchain_network", "rb")
         SendData = file.read(1024)
         while SendData:
-
-            data = {"fullchain" : 1,"byte" : (SendData.decode(encoding='iso-8859-1'))}
+            #data = {"fullchain" : 1,"byte" : (SendData.decode(encoding='iso-8859-1'))}
+            data = {"fullchain" : 1,"byte" : (SendData.decode(encoding='utf-8'))}
             if not node == None:
                 self.send_to_node(node,data)
             else:
@@ -94,7 +94,8 @@ class MyOwnPeer2PeerNode (Node):
         
         file = open("blockchain.mix_blockchain_network", "ab")
 
-        file.write((data.encode(encoding='iso-8859-1')))
+        file.write((data.encode(encoding='utf-8')))
+        #file.write((data.encode(encoding='iso-8859-1')))
 
         file.close()
 
@@ -103,8 +104,8 @@ class MyOwnPeer2PeerNode (Node):
         file = open("connected_node.mix_blockchain_network", "rb")
         SendData = file.read(1024)
         while SendData:
-
-            data = {"fullchain" : 1,"byte" : (SendData.decode(encoding='iso-8859-1'))}
+            #data = {"fullchain" : 1,"byte" : (SendData.decode(encoding='iso-8859-1'))}
+            data = {"fullchain" : 1,"byte" : (SendData.decode(encoding='utf-8'))}
             print(data)
             print(type(data))
             if not node == None:
@@ -117,8 +118,9 @@ class MyOwnPeer2PeerNode (Node):
         
         file = open("connected_node.mix_blockchain_network", "ab")
 
-        file.write((data.encode(encoding='iso-8859-1')))
-
+        #file.write((data.encode(encoding='iso-8859-1')))
+        file.write((data.encode(encoding='utf-8')))
+        
         file.close()
 
 
